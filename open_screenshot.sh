@@ -1,3 +1,8 @@
+# Script to open an image window with a selection of the screen.
+# A file with the name "active_screenshot<timestamp>.png" is created
+# when the script is called. This file is deleted after the window is
+# closed.
+# ---------------------------------------------------------------------
 # Screenshot filename
 fname="active_screenshot_"$(date +"%Y%m%d_%H%M%S")".png"
 
