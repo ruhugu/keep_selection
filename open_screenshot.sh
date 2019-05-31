@@ -1,8 +1,8 @@
-# screenshot filename
+# Screenshot filename
 fname="active_screenshot_"$(date +"%Y%m%d_%H%M%S")".png"
 
 # Create and open screenshot
-import $fname
+import $fname  # ImageMagick command for screenshots
 xviewer $fname &
 sleep 2
 
