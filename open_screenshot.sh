@@ -3,7 +3,7 @@ fname="active_screenshot_"$(date +"%Y%m%d_%H%M%S")".png"
 
 # Create and open screenshot
 import $fname  # ImageMagick command for screenshots
-xviewer $fname &
+xviewer $fname &  # You can replace xviewer with the image viewer of your choice
 sleep 2
 
 # Get PID of the screenshot window
