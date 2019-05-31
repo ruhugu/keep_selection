@@ -1,5 +1,5 @@
 # screenshot filename
-fname="active_screenshot.png"
+fname="active_screenshot_"$(date +"%Y%m%d_%H%M%S")".png"
 
 # Create and open screenshot
 import $fname
