@@ -20,4 +20,3 @@ sudo cp keep_selection /usr/local/bin
 
 After this, asign a keyboard shortcut to the script. In Linux Mint you can do this in Custom Shortcuts inside System Settings/Keyboard/Shortcuts.
 ![Shortcut configuration 1](https://raw.githubusercontent.com/ruhugu/keep_selection/master/examples/add_shortcut.png)
-![Shortcut configuration 2](https://raw.githubusercontent.com/ruhugu/keep_selection/master/examples/add_shortcut.png)
