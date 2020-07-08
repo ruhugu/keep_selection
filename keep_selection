@@ -5,15 +5,17 @@
 # ---------------------------------------------------------------------
 # Screenshot filename
 fname="active_screenshot_"$(date +"%Y%m%d_%H%M%S")".png"
+# Screenshot path
+path="/tmp/"$fname
 
 # Create and open screenshot
-import $fname  # ImageMagick command for screenshots
-xviewer $fname &  # You can replace xviewer with the image viewer of your choice
+import $path  # ImageMagick command for screenshots
+xviewer $path &  # You can replace xviewer with the image viewer of your choice
 sleep 2
 
 # Get PID of the screenshot window
-pid=$(ps aux | grep $fname | grep -v grep | awk '{print $2}')
+pid=$(ps aux | grep $path | grep -v grep | awk '{print $2}')
 
 # When the window is closed, remove the screenshot
 wait $pid
-rm $fname
+rm $path
