@@ -14,7 +14,7 @@ xviewer $path &  # You can replace xviewer with the image viewer of your choice
 sleep 2
 
 # Get PID of the screenshot window
-pid=$(ps aux | grep $path | grep -v grep | awk '{print $2}')
+pid=$!
 
 # When the window is closed, remove the screenshot
 wait $pid
